@@ -1,0 +1,30 @@
+shell:
+  program: ubuntu2004
+  args:
+    - -c
+    - cd ~ && tmux
+key_bindings:
+# Fix C-Space tmux prefix in Windows
+  - { key: Space, mods: Control, chars: "\x00" } 
+  
+# Font configuration
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+  size: 14.0
+  
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+selection:
+  save_to_clipboard: true
